@@ -1,0 +1,11 @@
+vyper
+from starkware.starknet.core.storage.storage import Storage
+from starkware.starknet.definitions.error_codes import assert_eq
+
+@public
+def add(a: uint256, b: uint256) -> uint256:
+    return a + b
+
+@public
+def subtract(a: uint256, b: uint256) -> uint256:
+    return a - b
